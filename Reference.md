@@ -22,3 +22,7 @@ git commit -a
 # the faster way to give commit meesage is this:
 
 git commit -am '<message>'
+
+# to change the previous commit message
+
+git commit --amend
