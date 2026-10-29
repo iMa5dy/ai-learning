@@ -13,4 +13,12 @@ git commit -m '<commit message>'
 
 # for commit and adding the ONLY modified file
 
-git commit -a '<message>'
+git commit -a
+
+# it will open new shell tab for me it's nano and then you insert your commit message!
+
+#
+
+# the faster way to give commit meesage is this:
+
+git commit -am '<message>'
