@@ -1,4 +1,4 @@
-# Add files
+# Add files to stage
 
 git add <fileName>
 git add .
@@ -15,30 +15,41 @@ git commit -m '<commit message>'
 
 git commit -a
 
-# it will open new shell tab for me it's nano and then you insert your commit message!
+ <!-- it will open new shell tap and then you insert your commit message! -->
 
-#
-
-# the faster way to give commit meesage is this:
+# way to give commit and adding :
 
 git commit -am '<message>'
 
-# to change the previous commit message
+# to edit the previous commit message
 
 git commit --amend
 git commit --amend -a
 
-# all gitlog cheats
+<!-- -a here is add  -->
 
-git log -> <for all logs>
-git log -n 3 -> <the last 3 message>
-git log --grep="searching" -> <searching by the desc of the commit>
-git log --oneline" -> <showing the logs in one line (pretty and clean)>
-git log --graph" -> <showing in nice graphical format>
-git log filename. -> <showing the logss of the file>
+# log
 
-# git reset
+git log<!--          --><show all logs>
+git log -n 3<!--    --> <show he last 3 in small message>
+git log --grep="search" <searching by the desc of the commit>
+git log --oneline<!----><showing the logs in one line (pretty and clean)>
+git log --graph"<!-- --><showing in nice graphical format>
+git log filename.<!----><showing the logs of the file>
 
-git reset --soft HEAD~1 <back to previous commit and keep in state area>
-git reset --mixed HEAD~1 <back to previous commit and keep in working directiory>  
-git reset --hard HEAD~1 <back to previous commit and remove EVERYTHING of that commit >
+# reset / undo chagnes
+
+git reset --soft HEAD~1 <!----><back to previous commit and keep in state area>
+git reset --mixed HEAD~1<!----><back to previous commit and keep in working directiory>  
+git reset --hard HEAD~1 <!----><back to previous commit and remove EVERYTHING of that commit >
+
+ <!-- HEAD~x is just a number you can type any number!! -->
+
+git checkout <filename > <discard changes on working directory>
+
+git revert <commit hash> <undo changes in the commit hash by adding a new commit, this keep in history>
+
+# diff
+
+git diff <!--         --><show what has been change (stage vs working)>
+git diff --staged <!----><show what has been change (stage (&& ||) working vs last commit)>
