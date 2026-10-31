@@ -36,3 +36,9 @@ git log --grep="searching" -> <searching by the desc of the commit>
 git log --oneline" -> <showing the logs in one line (pretty and clean)>
 git log --graph" -> <showing in nice graphical format>
 git log filename. -> <showing the logss of the file>
+
+# git reset
+
+git reset --soft HEAD~1 <back to previous commit and keep in state area>
+git reset --mixed HEAD~1 <back to previous commit and keep in working directiory>  
+git reset --hard HEAD~1 <back to previous commit and remove EVERYTHING of that commit >
